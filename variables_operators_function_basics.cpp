@@ -24,3 +24,5 @@ int main(){
     cout<<"long long int size:"<< sizeof(long long int);
     return 0;
 }
+
+//note: here sizeof() is not a userdefined fn, it's a predefined fn which we are getting to access, bcoz we impprted the library in the std iostream itself
