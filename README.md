@@ -1,3 +1,3 @@
 # Cpp-basics--personal
 
-<img width="376" alt="image" src="https://github.com/user-attachments/assets/b8782555-ae3f-44fd-986f-de0b2f9a502d">
+<img width="396" alt="image" src="https://github.com/user-attachments/assets/b6b3e0d2-792f-4b96-9962-5b4326701712">
