@@ -11,5 +11,7 @@ cout<<checkvalue;
 so it checks if it nmatches, if it did, 
 then it prints 1 for true, 0 for false
 */
+
+//similarly you can use if a>=17, <=17, so and so
 return 0;
 }
