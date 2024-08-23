@@ -44,6 +44,14 @@ Outputs:-
 Basic conditional stmts example
 <img width="440" alt="image" src="https://github.com/user-attachments/assets/85fc415e-b480-48e4-9fac-2a77b5b6cb5c">
 
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/7b43f2f9-66b9-4209-8b5f-54574d054b2c">
+
+<img width="437" alt="image" src="https://github.com/user-attachments/assets/078a6bee-073f-48a4-a54b-f18f56e123f2">
+
+<img width="446" alt="image" src="https://github.com/user-attachments/assets/3915545b-be41-45c2-82f2-479129f43cc1">
+
+
+
 
 
 
