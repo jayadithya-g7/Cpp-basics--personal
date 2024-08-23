@@ -41,6 +41,10 @@ Outputs:-
 
 <img width="461" alt="image" src="https://github.com/user-attachments/assets/6431206c-cfc3-4475-9cfd-7310281245bb">
 
+Basic conditional stmts example
+<img width="440" alt="image" src="https://github.com/user-attachments/assets/85fc415e-b480-48e4-9fac-2a77b5b6cb5c">
+
+
 
 
 
