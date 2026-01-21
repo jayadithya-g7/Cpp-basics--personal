@@ -1,7 +1,8 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
-const dotenv = require('dotenv'); // Added dotenv
+const dotenv = require('dotenv');
+const { MongoMemoryServer } = require('mongodb-memory-server');
 const Todo = require('./models/Todo');
 
 dotenv.config();
@@ -12,12 +13,26 @@ app.use(express.json());
 app.use(cors());
 
 // Connect to MongoDB
-const mongo_base_uri = process.env.MONGO_URI || "mongodb://127.0.0.1:27017/mern-todo";
+const connectDB = async () => {
+    const mongo_base_uri = process.env.MONGO_URI || "mongodb://127.0.0.1:27017/mern-todo";
 
-// Mongoose 7 defaults to these settings, explicit options are deprecated/removed
-mongoose.connect(mongo_base_uri)
-    .then(() => console.log("Connected to MongoDB"))
-    .catch(console.error);
+    try {
+        await mongoose.connect(mongo_base_uri);
+        console.log("Connected to MongoDB");
+    } catch (err) {
+        console.log("Failed to connect to local MongoDB. Attempting to start in-memory database...");
+        try {
+            const mongod = await MongoMemoryServer.create();
+            const uri = mongod.getUri();
+            await mongoose.connect(uri);
+            console.log("Connected to In-Memory MongoDB at", uri);
+        } catch (memErr) {
+            console.error("Failed to connect to in-memory database:", memErr);
+        }
+    }
+};
+
+connectDB();
 
 // Routes
 
