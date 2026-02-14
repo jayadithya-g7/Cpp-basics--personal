@@ -1,28 +1,34 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-void showhelloworld(){ //void means, no return value
-    cout<<"hello world";
+// void means no return value
+void showhelloworld() {
+    cout << "hello world" << endl;
 }
-int main(){
-    //declaration of variables and assigning
-    bool success= true;
+
+int main() {
+    // declaration of variables and assigning
+    bool success = true;
     bool found = true;
-    found = false; //u can update too
-    char name='r';
-    int a=10;
-    float b=20.12;
-    double c= 30.244;
-    cout<<name<<endl<<a<<endl<<b<<endl<<c<<endl;
+    found = false; // you can update too
+
+    char name = 'r';
+    int a = 10;
+    float b = 20.12f;
+    double c = 30.244;
+
+    cout << name << endl << a << endl << b << endl << c << endl;
 
     showhelloworld();
-    cout<<"bool size: "<< sizeof(bool);
-    cout<<"int size: "<< sizeof(int);
-    cout<<"float size: "<< sizeof(float);
-    cout<<"char size: "<< sizeof(char);
-    cout<<"double size: "<< sizeof(double);
-    cout<<"long long int size:"<< sizeof(long long int);
+
+    cout << "bool size: " << sizeof(bool) << endl;
+    cout << "int size: " << sizeof(int) << endl;
+    cout << "float size: " << sizeof(float) << endl;
+    cout << "char size: " << sizeof(char) << endl;
+    cout << "double size: " << sizeof(double) << endl;
+    cout << "long long int size: " << sizeof(long long int) << endl;
+
     return 0;
 }
 
-//note: here sizeof() is not a userdefined fn, it's a predefined fn which we are getting to access, bcoz we impprted the library in the std iostream itself
+// Note: sizeof() is not a user-defined function, it's a built-in operator.

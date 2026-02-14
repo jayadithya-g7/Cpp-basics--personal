@@ -1,17 +1,13 @@
+#include <iostream>
 
-#include<iostream>
-
-//why write iostream include header file library, as we can make use of input certain things, feeded to the program
+// The iostream header file allows us to use input/output objects like cout.
 using namespace std;
-//std is like defining a scope
-int main(){
-    //main is a function which is returning a int here
-    cout<<"hello world!"; //print hello world
-    return 0; //means successful program into the OS without bug/error
-}
 
-//note: comments are ignored by compiler
-/*
-comments (multiline)
-works this way too 
-*/
+// The main function is the entry point of the program.
+int main() {
+    // Print "hello world!" to the console.
+    cout << "hello world!" << endl;
+
+    // Return 0 to indicate successful execution.
+    return 0;
+}

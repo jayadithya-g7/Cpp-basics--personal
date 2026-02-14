@@ -1,0 +1,156 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+body {
+	background-color: #151515;
+	color: #fff;
+	padding: 32px;
+}
+
+.App {
+	padding: 32px;
+}
+
+h1 {
+	font-size: 40px;
+	margin-bottom: 32px;
+}
+
+h4 {
+	font-size: 18px;
+	color: #555;
+	text-transform: uppercase;
+	margin-bottom: 16px;
+}
+
+.todo {
+	position: relative;
+	background-color: #202020;
+	padding: 16px;
+	border-radius: 16px;
+	display: flex;
+	align-items: center;
+	transition: 0.5s;
+	cursor: pointer;
+	margin-bottom: 16px;
+}
+
+.todo:hover {
+	opacity: 0.8;
+}
+
+.todo .checkbox {
+	width: 20px;
+	height: 20px;
+	margin-right: 16px;
+	border-radius: 50%;
+	background-color: #333;
+	transition: 0.4s;
+}
+
+.todo.is-complete .checkbox {
+	background-color: #D34C68;
+	background-image: linear-gradient(to bottom, #D34C68, #A3284B);
+}
+
+.todo .text {
+	font-size: 20px;
+}
+
+.todo.is-complete .text {
+	text-decoration: line-through;
+}
+
+.todo .delete-todo {
+	position: absolute;
+	top: 50%;
+	right: 16px;
+	transform: translateY(-50%);
+	width: 24px;
+	height: 24px;
+	background-color: #C02C33;
+	color: #FFF;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.addPopup {
+	position: fixed;
+	bottom: 32px;
+	right: 32px;
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 32px;
+	color: #202020;
+	font-weight: 900;
+	cursor: pointer;
+	background-color: #D34C68;
+	background-image: linear-gradient(to bottom, #D34C68, #A3284B);
+}
+
+.popup {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	max-width: 400px;
+	background-color: #EEE;
+	padding: 32px;
+	border-radius: 16px;
+	box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.5);
+}
+
+.closePopup {
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	width: 20px;
+	height: 20px;
+	font-size: 20px;
+	color: #202020;
+	cursor: pointer;
+	font-weight: 900;
+}
+
+.popup h3 {
+	color: #202020;
+	margin-bottom: 16px;
+}
+
+.add-todo-input {
+	appearance: none;
+	outline: none;
+	border: none;
+	background-color: #FFF;
+	padding: 16px;
+	border-radius: 16px;
+	width: 100%;
+	box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.2);
+	font-size: 20px;
+}
+
+.button {
+	padding: 16px 32px;
+	border-radius: 999px;
+	background-image: linear-gradient(to right, #D34C68, #A3284B);
+	display: inline-block;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 18px;
+	margin-top: 16px;
+	text-align: center;
+	cursor: pointer;
+}

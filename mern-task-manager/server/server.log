@@ -1,0 +1,7 @@
+
+> server@1.0.0 start
+> node index.js
+
+Server started on port 3001
+Failed to connect to local MongoDB. Attempting to start in-memory database...
+Connected to In-Memory MongoDB at mongodb://127.0.0.1:42125/

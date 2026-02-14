@@ -17,6 +17,7 @@ if(sum+i>=150){
 else{
 sum=sum+i;
 }
+}
 //but how do we know till where i was reaching?
 cout<<i<<endl;
 cout<<sum<<endl; //it should be 17, as n(n+1)/2 ryt, so 17*18/2 so 17*9= 153
@@ -31,7 +32,7 @@ return 0;
 
 
 
-
+/*
 #include<iostream>
 using namespace std;
 int main(){
@@ -39,9 +40,8 @@ int main(){
 //find that what is the value of x
 
 
-/*
-so we'll start from 1
-*/
+// so we'll start from 1
+
 int sum=0;
 int i=1;
 for(i=1; sum<150 ;i++){ 
@@ -56,3 +56,4 @@ cout<<i<<endl;
 cout<<sum<<endl; //it should be 17, as n(n+1)/2 ryt, so 17*18/2 so 17*9= 153
 return 0;
 }
+*/
